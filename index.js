@@ -11,10 +11,45 @@ app.listen(3000);
 
 app.get("/", function(request, response)  {
    
-    response.render("homePage");
+    response.render("main");
 });
 
-app.get("/test", function(request, response)  {
+app.get("/gallery", function(request, response)  {
    
-    response.render("testPage");
+    response.render("Галерея");
+});
+
+app.get("/menu", function(request, response)  {
+   
+    response.render("Меню");
+});
+
+app.get("/contacts", function(request, response)  {
+   
+    response.render("Контакты");
+});
+
+app.get("/reservation", function(request, response)  {
+   
+    response.render("Бронирование");
+});
+
+app.get("/cold", function(request, response)  {
+   
+    response.render("Холодные закуски");
+});
+
+app.get("/hot", function(request, response)  {
+   
+    response.render("Горячие блюда");
+});
+
+app.get("/desserts", function(request, response)  {
+   
+    response.render("Десерты");
+});
+
+app.get("/bar", function(request, response)  {
+   
+    response.render("Бар");
 });

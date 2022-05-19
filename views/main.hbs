@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--Header-->
+
+{{> menu}}
+
+    <form method="POST">
+        <label>Фамилия</label>
+        <input name="last_name" /><br><br>
+
+        <label>Имя</label>
+        <input name="name" /><br><br>
+
+        {{!-- <label>Отчество</label>
+        <input name="middle_name" /><br><br> --}}
+
+        {{!-- <label>Дата рождения</label>
+        <input name="birthday"/><br><br>
+
+        <label>Номер телефона</label>
+        <input name="phone_number" /><br><br>
+
+        <label>Email</label>
+        <input name="email"/><br><br>
+
+        <label>Номер стола</label>
+        <input name="table_number"/><br><br> --}}
+        <input type="submit" value="Отправить" />
+     </form>
+
+    <!--Style-->
+
+    <style>
+        body{
+            background: #020202;
+        }
+    </style>
+
+   <!--Content-->
+   <div class="foto">
+    <img src="osnova.png">
+   </div>
+</body>
+
+<footer>
+    <div class="txt5">
+        <h1>г. Владимир  ул. Большая Московская  д.1</h1>
+    </div>
+</footer>
+</html>
