@@ -34,7 +34,7 @@ exports.bar = function (request, response) {
     response.render("bar.hbs");
 };
 
-exports.request = function(request, response){
+exports.request = function(request, response) {
     console.log("Пришли в метод");
     const name = request.body.name;
     const lastname = request.body.last_name;
@@ -50,14 +50,14 @@ exports.request = function(request, response){
     db.order.create({
         name: name,
         lastname: lastname,
-        // middlename: middlename,
-        // birthday: birthday,
-        // phone_number: phone_number,
-        // email: email,
-        // table_number: table_number
+        middlename: middlename,
+        birthday: birthday,
+        phone_number: phone_number,
+        email: email,
+        table_number: table_number
     }).then(res=>{
-        const order = {id: res.id, name: res.name, lastname: res.last_name, birthday: res.birthday, email: res.email}
+        const order = {id: res.id, name: res.name}
         console.log(order);
+        response.render("/bron.hbs");
     }).catch(err=>console.log(err));
-    response.redirect("/Бронирование");
-};
+}

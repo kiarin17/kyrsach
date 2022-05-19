@@ -13,7 +13,7 @@ router.use("/bar", controller.bar);
 
 const urlencodedParser = express.urlencoded({extended: false});
 
-router.get("/", controller.index);
+router.get("/", controller.bron);
 router.post("/", urlencodedParser, function (request, response) {
     if(!request.body) return response.sendStatus(400);
     console.log(request.body);
