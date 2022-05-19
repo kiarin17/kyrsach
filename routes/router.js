@@ -10,6 +10,7 @@ router.use("/cold", controller.cold);
 router.use("/hot", controller.hot);
 router.use("/desserts", controller.desserts);
 router.use("/bar", controller.bar);
+router.use("/index", controller.index);
 
 const urlencodedParser = express.urlencoded({extended: false});
 
